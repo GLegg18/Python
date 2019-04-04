@@ -1,9 +1,9 @@
-import simplegui
+import simpleguitk
 import random
 
 CARD_SIZE = (72, 96)
 CARD_CENTER = (36, 48)
-card_images = simplegui.load_image("http://storage.googleapis.com/codeskulptor-assets/cards_jfitz.png")    
+card_images = simpleguitk.load_image("http://storage.googleapis.com/codeskulptor-assets/cards_jfitz.png")    
 
 in_play = False
 outcome = ""
@@ -135,7 +135,7 @@ def draw(canvas):
     dealer_card.draw(canvas , [300 ,300]) 
     canvas.draw_text(score2 , [400, 100] , 40, 'Red')
 
-frame = simplegui.create_frame("Blackjack", 600, 600)
+frame = simpleguitk.create_frame("Blackjack", 600, 600)
 frame.set_canvas_background("Green")
 
 frame.add_button("Deal", deal, 200)
